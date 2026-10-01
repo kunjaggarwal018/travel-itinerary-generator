@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Travel Itinerary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    ```
+    <div class="container">
+
+        <h1>Travel Itinerary Generator</h1>
+        <p>Plan your trip using the weather.</p>
+
+        <form id="form">
+
+            <label>Destination City</label>
+            <input type="text" id="city" placeholder="Enter city" required>
+
+            <label>Trip Duration</label>
+            <input type="number" id="days" min="1" max="7" required>
+
+            <label>Traveler Type</label>
+            <select id="persona">
+                <option value="Backpacker">Backpacker</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Family">Family</option>
+            </select>
+
+            <button type="submit">Generate Itinerary</button>
+
+        </form>
+
+        <p id="loading"></p>
+        <p id="error"></p>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+    ```
+
+</body>
+
+</html>
